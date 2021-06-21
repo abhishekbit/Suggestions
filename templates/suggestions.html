@@ -1,0 +1,23 @@
+
+
+<body style = "background-color: palegoldenrod;">
+    <br/>
+
+<h1 style="text-align: center;"> The product name is :  {{ ProductName }} </h1>
+
+
+<h2 style="text-align: center;">Suggested values for  {{ ProductName }} are : </h2>
+<br/>
+
+{% for i in suggestions %}
+
+<h3 style="text-align: center;"> {{ i }} </h3> 
+<br/>
+
+{% endfor %}
+
+<br/> 
+
+
+<a href="{% url 'home' %}">Go Back</a>
+</body>
